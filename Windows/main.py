@@ -73,6 +73,9 @@ class LoggerApp(ctk.CTk):
         self.status.configure(text="✅ 已记录！")
         self.entry.delete(0, ctk.END)
         #清空输入框里的内容。
+
+        self.after(3000, lambda: self.status.configure(text=""))
+        # 3秒后自动清除状态提示
 if __name__ == "__main__":
     #主函数
     app = LoggerApp()
