@@ -74,6 +74,5 @@ class LoggerApp(ctk.CTk):
         self.entry.delete(0, ctk.END)
         #清空输入框里的内容。
 if __name__ == "__main__":
-    #主函数
     app = LoggerApp()
     app.mainloop()
